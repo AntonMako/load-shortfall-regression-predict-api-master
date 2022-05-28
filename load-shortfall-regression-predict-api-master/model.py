@@ -60,7 +60,7 @@ def _preprocess_data(data):
 
     # ----------- Replace this code with your own preprocessing steps --------
     
-    predict_vector = feature_vector_df[['Madrid_wind_speed','Bilbao_rain_1h','Valencia_wind_speed', 'Seville_humidity', 'Bilbao_clouds_all', 'Valencia_snow_3h', 'Valencia_temp_max', 'Madrid_humidity', 'Bilbao_wind_speed', 'Barcelona_rain_3h', 'Barcelona_pressure', 'Madrid_pressure', 'Barcelona_temp_min', 'Seville_rain_3h']]
+    predict_vector = feature_vector_df[['wind_speed', 'wind_deg', 'humidity', 'clouds_all', 'pressure', 'temp_max', 'temp_min', 'snow_3h', 'rain_3h', 'Year', 'Month_of_year', 'Day_of_month', 'Day_of_week', 'Hour_of_day']]
     ##Create standardization object
     ## Remove outliers
     scaler = StandardScaler()
